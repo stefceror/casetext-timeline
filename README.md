@@ -25,6 +25,12 @@ npm run dev
 npm run build
 ```
 
+* To run the node server locally:
+
+```bash
+npm run build && npm run serve
+```
+
 ## App set up
 
 * `dist` - Production folder. One root file in `index.html` linked to your entire app in form of `bundle.min.js`.

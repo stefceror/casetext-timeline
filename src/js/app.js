@@ -27,9 +27,11 @@ app.get("/case/:id", (req, res) => {
 
   let data = DataParser(rawData);
 
+  let caseTitle = "cotter-v-lyft-inc";
+
   document.getElementById(
     "timeline-title"
-  ).innerText = `Citation timeline for ${searchString}`;
+  ).innerText = `Citation timeline for ${caseTitle}`;
 
   Chart(data, width, height);
 });
