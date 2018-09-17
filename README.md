@@ -1,4 +1,7 @@
-# Webpack Simple Boilerplate
+# casetext Timeline
+A timeline visualization for case citations using casetext's data api
+
+## Webpack Simple Boilerplate
 This project is using [JazzBrotha's webpack-simple-boilerplate](https://github.com/JazzBrotha/webpack-simple-boilerplate) as a base configuration for webpack.
 
 ## Instructions
