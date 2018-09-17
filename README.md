@@ -23,6 +23,9 @@ npm run dev
 Point your browser to http://localhost:8666
 
 * For production:
+```bash
+npm run build
+```
 
 
 ## Todo:
