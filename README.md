@@ -21,15 +21,12 @@ npm run dev
 ```
 * For production:
 
-```bash
-npm run build
-```
 
-* To run the node server locally:
-
-```bash
-npm run build && npm run serve
-```
+## Todo:
+- Get server build working
+- Add ability to fetch data from api
+- Size and case dots based on number of citations
+- Add hover text to case dots
 
 ## App set up
 
