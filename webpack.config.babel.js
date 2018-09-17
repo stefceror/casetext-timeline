@@ -1,4 +1,5 @@
 import HtmlWebpackPlugin from "html-webpack-plugin";
+import HtmlWebpackInlineSourcePlugin from "html-webpack-inline-source-plugin";
 
 module.exports = {
 	// Your main js file
@@ -28,8 +29,10 @@ module.exports = {
 		new HtmlWebpackPlugin({
 			minify: { collapseWhitespace: true },
 			// Write all your html in this file
-			template: "./src/index.ejs"
-		})
+			template: "./src/index.ejs",
+			inlineSource: ".(js|css)$"
+		}),
+		new HtmlWebpackInlineSourcePlugin()
 	],
 
 	node: false,
@@ -39,6 +42,6 @@ module.exports = {
 		// Set a port number to your liking
 		port: process.env.PORT || 8666,
 		contentBase: "./src",
-		historyApiFallback: false
+		historyApiFallback: true
 	}
 };

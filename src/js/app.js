@@ -1,5 +1,8 @@
 import Chart from "./chart";
 import DataParser from "./data_parser";
+import frontexpress from "frontexpress";
+
+const app = frontexpress();
 
 let rawData = {
   counts: { case: 16 },
@@ -359,12 +362,16 @@ let rawData = {
   }
 };
 
-let data = DataParser(rawData);
+app.get("/case/:id", (req, res) => {
+  let data = DataParser(rawData);
 
-let caseSlug = "cotter-v-lyft-inc-2";
+  let caseSlug = "cotter-v-lyft-inc-2";
 
-document.getElementById(
-  "timeline-title"
-).innerText = `Citation timeline for ${caseSlug}`;
+  document.getElementById(
+    "timeline-title"
+  ).innerText = `Citation timeline for ${caseSlug}`;
 
-Chart(data);
+  Chart(data);
+});
+
+app.listen();

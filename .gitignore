@@ -1,3 +1,5 @@
 node_modules
 npm-debug.log
-dist/bundle.min.js.map
+dist/*
+.DS_Store
+src/.DS_Store
