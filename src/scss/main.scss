@@ -8,6 +8,7 @@ body {
 
 circle {
   fill: $casetext--blue;
+  stroke: $casetext--gray-dark;
 }
 
 svg {
@@ -22,4 +23,12 @@ h1 {
   background-color: $casetext--primary;
   color: $casetext--white;
   font-family: $casetext--font-family-sans-serif;
+}
+
+.tooltip {
+  width: 350px;
+  height: 30px;
+  position: absolute;
+  background-color: $casetext--light;
+  color: $casetext--gray-dark;
 }

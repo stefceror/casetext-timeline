@@ -19,14 +19,17 @@ npm install
 ```bash
 npm run dev
 ```
+
+Point your browser to http://localhost:8666
+
 * For production:
 
 
 ## Todo:
 - Get server build working
 - Add ability to fetch data from api
-- Size and case dots based on number of citations
-- Add hover text to case dots
+- Color dots based on number of citations
+- Fix hover events
 
 ## App set up
 
