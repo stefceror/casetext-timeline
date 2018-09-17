@@ -1,13 +1,24 @@
 @import "variables";
 
 body {
+  box-sizing: border-box;
+  margin: 0px;
+  background-color: $casetext--gray;
 }
 
 circle {
   fill: $casetext--blue;
 }
 
+svg {
+  background-color: white;
+  display: block;
+  margin: auto;
+}
+
 h1 {
+  margin: 0px;
+  padding: 0.5em;
   background-color: $casetext--primary;
   color: $casetext--white;
   font-family: $casetext--font-family-sans-serif;
